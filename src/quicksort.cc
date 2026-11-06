@@ -1,0 +1,43 @@
+#include "myheaders.h"
+//quick Sort
+//Cullen Chadwick
+
+void quicksort(long data[], int first, long last){
+	long lower = first + 1;
+	long upper = last;
+
+	swap(data[first],data[(first+last)/2]);
+	long bound = data[first];
+	while(lower <= upper){
+		while (bound > data[lower])
+			lower ++;
+		while (bound < data[upper])
+			upper--;
+		if (lower < upper)
+			swap(data[lower++], data[upper--]);
+		else lower ++;
+	}
+
+
+	swap(data[upper], data[first]);
+	if (first < upper - 1)
+		quicksort (data, first, upper - 1);
+	if (upper + 1 < last)
+		quicksort(data, upper + 1, last);
+
+}
+
+void quicksort (long data[], int n){
+	int i, max;
+	if (n < 2)
+		return;
+	for(i = 1, max = 0; i < n; i++)
+		if(data[max] < data[i])
+			max = i;
+	swap(data[n-1], data[max]);
+	quicksort (data, 0, n-2);
+}
+
+
+
+// Your ASort function(s) goes here ..

@@ -34,7 +34,7 @@ int main() {
                     // The function 'readfile' returns the size of the file that was read
 					// If the file could not be read, 'readfile' returns -1
 				
-					ifilename = "lab5_A_output.txt";
+					ifilename = "lab4_input.txt";
 					sz = readfile(ifilename, data);
 			
 					if (sz < 0)	 {
@@ -58,13 +58,13 @@ int main() {
 			
 					// Call your Sort function A here to sort the array 'wData''
 			        //  Note that 'wData' is of size 'sz' (see case 1).
-					bubblesort(wData, sz);		//calls
+					bubblesort(wData, sz);		//calls the bubblesort function defined in bubblesort.cc, takes in the working data and size created from case 1
 
 			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Bubblesort ran for " << cpu_time_used << " secs.";
 			
 					ofilename = "lab5_A_out.txt";
 					writefile(wData, sz, ofilename);
@@ -81,17 +81,18 @@ int main() {
 			case 3: // Sort function B
 			
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+			        for (int i = 0; i < sz; i++){
+			        	wData[i] = data[i];
+			        }
 			        
-			        
-					begin_time = clock();   // start cpu timer
-			
+
 
 					begin_time = clock();   // start cpu timer
 			
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 
-
+					quicksort(wData, sz);
 			
 					end_time = clock();		// end cpu timer
 
