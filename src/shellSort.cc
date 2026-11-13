@@ -2,7 +2,7 @@
 // Mitchell Sousa
 #include "myheaders.h"
 
-void Shellsort(long data[], int n) {
+void shellSort(long data[], int n) {
 	int i, j, hCnt, h;
 	int increments[20], k;
 	// create an appropriate number of increments h

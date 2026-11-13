@@ -3,7 +3,7 @@
 #include "myheaders.h"
 
 
-void combsort(long data[], int n) {
+void combSort(long data[], int n) {
 	int step = n, j, k;
 	while ((step = int(step/1.3)) > 1) // phase 1
 		for (j = n-1; j >= step; j--) {
