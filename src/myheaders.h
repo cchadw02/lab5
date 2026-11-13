@@ -15,3 +15,5 @@ void	swap(long& x, long& y);
 void 	bubblesort(long wData[], long sz);
 void 	quicksort(long data[], int first, long last);
 void 	quicksort(long data[], int n);
+void 	combsort(long data[], int n);
+

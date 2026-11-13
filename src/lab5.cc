@@ -124,13 +124,13 @@ int main() {
 
 								// Call your Sort function B here to sort the array 'wData'
 						        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+								quicksort(wData, sz);
 
 
 								end_time = clock();		// end cpu timer
 
 								cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-								cout << endl << "CSort ran for " << cpu_time_used << " secs.";
+								cout << endl << "Comb sort ran for " << cpu_time_used << " secs.";
 
 								ofilename = "lab5_B_out.txt";
 								writefile(wData, sz, ofilename);
