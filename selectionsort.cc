@@ -2,7 +2,7 @@
  * selectionsort.cc
  *
  *  Created on: Nov 17, 2026
- *      Author: drew-healy
+ *      Author: Drew Healy
  */
 #include "myheaders.h"
 //Sorts data in increasing order. For each position i, finds the smallest element
