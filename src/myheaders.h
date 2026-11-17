@@ -17,3 +17,5 @@ void 	quicksort(long data[], int first, long last);
 void 	quicksort(long data[], int n);
 void 	combSort(long data[], int n);
 void 	shellSort(long data[], int n);
+void 	heapSort(long data [], int n);
+void 	selectionSort(long data[], int n);
