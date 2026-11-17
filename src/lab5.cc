@@ -9,6 +9,12 @@
 //  stack space, run the following command from your terminal:
 //  ulimit -s 819200
 
+
+//Lab 5: Group Sorting Algorithms
+//Authors: Mitchell Sousa, Drew Healey, and Cullen Chadwick
+//Description: Implement two sorting algorithms per person to sort integers in an array from lowest to highest and compare run times and complexity
+//Due: 11/20/2026
+
 #include <iostream>
 #include <ctime>
 #include "myheaders.h"
@@ -46,7 +52,7 @@ int main() {
 			
 					break;
 
-			case 2: // Sort function A
+			case 2: // Bubble Sort function
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
                     
@@ -78,7 +84,7 @@ int main() {
 			
 					break;
 
-			case 3: // Sort function B
+			case 3: // Quick Sort function
 			
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 			        for (int i = 0; i < sz; i++){
@@ -111,7 +117,7 @@ int main() {
 			
 					break;
 					
-			case 4:
+			case 4:		//Combsort function
 
 					// First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					for (int i = 0; i < sz; i++){
@@ -144,7 +150,7 @@ int main() {
 
 					break;
 
-			case 5:
+			case 5:		//Shell Sort Function
 
 					// First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					for (int i = 0; i < sz; i++){
@@ -177,7 +183,7 @@ int main() {
 					break;
 
 
-			case 6: // Sort function B
+			case 6: // HEap Sort function
 
 						        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 						        for (int i = 0; i < sz; i++){
@@ -211,7 +217,7 @@ int main() {
 								break;
 
 
-			case 7: // Sort function B
+			case 7: // selection Sort function
 
 						        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 						        for (int i = 0; i < sz; i++){
